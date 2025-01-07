@@ -6,131 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        console.log('toto');
-        
-        // Déclarer 1 variable
-
-        // variable destinée à être changée (var)
-        // disponible partout dans le code
-        var ma_var1 = null;
-        // variable destinée à être changée (let)
-        // uniquement disponible là où il a été déclaré
-        let ma_var2 = null;
-        // Valeur fixe (const)
-        // uniquement disponible là où il a été déclaré
-        const ma_var3 = null;
-
-
-        // Quels sont les types de variable
-        // - String
-        let str = "ceci est une chaine de caractère";
-        // - Boolean (true / false)
-        let boo = false;
-        // - Integer (nombres entiers)
-        let integ = 200;
-        // - Float (nombres à virgule)
-        let floa = 12.20;
-        // - Tableau (Array)
-
-
-        // Opérateurs
-        let a = 9 + 4;
-        let b = 9 - 4;
-        let c = 9 * 4;
-        let d = 9 / 4; // 2.25
-        let e = 9 % 4; // 1
-
-        // opérateurs d'assignation
-        let aa = 1;
-        let bb = 2;
-        let cc = aa + bb;
-        // je veux rajouter la valeur de "aa" à "cc"
-        cc = cc + aa;
-        // syntaxe différente, mais même résultat : 
-        cc += aa;
-
-        // comparaison
-        let f = 9 > 4;
-        let g = 9 >= 4;
-        let h = 9 < 4;
-        let j = 9 <= 4;
-        // comparaison de valeur
-        let k = 9 == "9";
-        // comparaison de valeur + type
-        let l = 9 === "9";
-        console.log("k : ", k);
-        console.log("l : ", l);
-
-        // permet de faire plusieurs comparaisons : 
-        // && => ET
-        // || => OU
-        let toto = true;
-        let tata = false;
-        if(toto == true && tata == false) {
-            console.log("test 1");
-        }
-        if(toto == true && tata == true) {
-            console.log("test 2");
-        }
-        if(toto == true || tata == false) {
-            console.log("test 3");
-        }
-        if(toto == true || tata == true) {
-            console.log("test 4");
-        }
-
-
-        // Conditions
-        let age = 18;
-        
-        // on veut afficher "majeur" ou "non majeur"
-
-        // si équivalent ou supérieur
-        if (age > 18) {
-            console.log("majeur");
-        } else if (age == 18) {
-            console.log("majeur");
-        } else {
-            console.log("non majeur");
-        }
-
-        // Tableaux
-        let tablo = [1, 2, 3, 4, 5, 6];
-        console.log(tablo);
-        // je veux accéder à la 3ème case (3)
-        console.log(tablo[2]);
-        console.log("---------------");
-        console.log("tablo.length : ", tablo.length);
-        
-        // Boucles
-        // boucle "dénombrable" : il y a un nombre de tour de boucle connu à l'avance.
-        for (let i=0; i < tablo.length; i++) {
-            // chaque tour exécute ce qu'il y a ici
-            console.log(tablo[i]);
-        }
-
-        // boucles "indénombrables" : pas de nombre de tour connu à l'avance
-        // Si je veux boucler sur mon tableau pour récupérer l'indice qui correspond à la lettre "g"
-        const alphabet = [
-            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
-            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-        ];
-
-        let i = 0;
-        let booo = false;
-        while (booo == false) {
-            // vérification
-            if(alphabet[i] == "g") {
-                // on stop la condition
-                booo = true;
-                console.log("indice : ", i)
-            }
-            // incrémenter le i
-            i++;
-        }
-
-
-    </script>
+    <h1>Manipulation du DOM</h1>
+    <form action="">
+        <input id="input" type="text" placeholder="mettre un nom ici">
+        <button id="btn_submit" type="submit">Envoyer</button>
+    </form>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nom</th>
+            </tr>
+        </thead>
+        <tbody id="ici">
+            <tr>
+                <td>Kévin</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="monscript.js"></script>
 </body>
 </html>
