@@ -8,7 +8,6 @@
 - Si le nombre est divisible par 5, afficher : X est un multiple de 5.
 - Si le nombre est divisible par 3 et 5, afficher : X est un multiple de 3 et 5.
 - Sinon, afficher : X n'est pas un multiple de 3 ni de 5.
-- Bonus : Afficher le type de la variable pour chaque nombre.
 
 ## Consignes :
 
@@ -21,14 +20,14 @@
 ## Exemple de résultat dans la console :
 
 ```
-1 n'est pas un multiple de 3 ni de 5 (type : number)
-2 n'est pas un multiple de 3 ni de 5 (type : number)
-3 est un multiple de 3 (type : number)
-4 n'est pas un multiple de 3 ni de 5 (type : number)
-5 est un multiple de 5 (type : number)
-6 est un multiple de 3 (type : number)
+1 n'est pas un multiple de 3 ni de 5
+2 n'est pas un multiple de 3 ni de 5
+3 est un multiple de 3
+4 n'est pas un multiple de 3 ni de 5
+5 est un multiple de 5
+6 est un multiple de 3
 ...
-15 est un multiple de 3 et 5 (type : number)
+15 est un multiple de 3 et 5
 ...
-50 est un multiple de 5 (type : number)
+50 est un multiple de 5
 ```
