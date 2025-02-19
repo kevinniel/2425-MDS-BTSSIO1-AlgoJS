@@ -47,3 +47,13 @@ https://github.com/kevinniel/2425-MDS-BTSSIO1-AlgoJS
                 - y mettre la valeur correspondante
                 - mettre le "td" à la fin du "tr" => append
             - Mettre le "tr" dans le tableau !
+    - ❌ Mettre en place les vérifications avant la réalisation des calculs
+        - à faire dès la soumission du formulaire
+        - prendre chaque champs un par un :
+            - récupérer la valeur
+            - vérifier qu'elle est conforme aux attentes
+            - si un seul champs n'est pas conforme, afficher un message d'erreur et ne pas soumettre le formulaire :
+                - créer un élément "p"
+                - y mettre le message d'erreur
+                - l'afficher en dessous du champs correspondant (append - querySelector)
+                - ne pas faire la suite du traitement
