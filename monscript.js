@@ -12,7 +12,7 @@ btn_submit.addEventListener("click", function(event) {
 
     // récupération du contenu de l'input
     const input = document.querySelector("#input");
-    console.group(input.value);
+    console.log(input.value);
 
     // on vérifie que la valeur ne soit pas vide
     if(input.value !== "") {
